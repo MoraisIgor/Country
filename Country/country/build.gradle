@@ -1,0 +1,156 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+version '1.0.0'
+
+android {
+
+    compileSdkVersion 26
+    buildToolsVersion '26.0.1'
+
+    defaultConfig {
+
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName version
+    }
+
+    buildTypes {
+
+        release {
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+dependencies {
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+}
+
+group = 'com.github.moraisigor'
+
+install {
+
+    repositories.mavenInstaller {
+
+        pom {
+
+            project {
+
+                packaging 'aar'
+
+                name 'Country'
+                description 'Country'
+                url 'https://github.com/MoraisIgor/Country'
+
+                licenses {
+
+                    license {
+
+                        name 'Apache Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0'
+                    }
+                }
+
+                developers {
+
+                    developer {
+
+                        id 'MoraisIgor'
+                        name 'Igor Morais'
+                        email 'igor.morais@hollowsoft.com'
+                    }
+                }
+
+                scm {
+
+                    url 'https://github.com/MoraisIgor/Country'
+                    connection 'https://github.com/MoraisIgor/Country.git'
+                    developerConnection 'https://github.com/MoraisIgor/Country.git'
+                }
+            }
+        }
+    }
+}
+
+task javadoc(type: Javadoc) {
+
+    source = android.sourceSets.main.java.srcDirs
+
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+
+    classifier = 'javadoc'
+
+    from javadoc.destinationDir
+}
+
+task sourcesJar(type: Jar) {
+
+    from android.sourceSets.main.java.srcDirs
+
+    classifier = 'sources'
+}
+
+artifacts {
+
+    archives javadocJar
+    archives sourcesJar
+}
+
+bintray {
+
+    Properties properties = new Properties()
+
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+    user = properties.getProperty('bintray.user')
+    key = properties.getProperty('bintray.key')
+
+    configurations = ['archives']
+
+    publish = true
+
+    pkg {
+
+        repo = 'Maven'
+
+        name = 'Country'
+        desc = 'Country'
+        websiteUrl = 'https://github.com/MoraisIgor/Country'
+        issueTrackerUrl = 'https://github.com/MoraisIgor/Country/issues'
+        vcsUrl = 'https://github.com/MoraisIgor/Country.git'
+        licenses = ['Apache-2.0']
+        labels = ['android']
+
+        version {
+
+            gpg {
+
+                sign = true
+                passphrase = properties.getProperty('bintray.password')
+            }
+
+            /* mavenCentralSync {
+
+                sync = true
+                user = properties.getProperty('sonatype.user')
+                password = properties.getProperty('sonatype.password')
+                close = '1'
+            } */
+        }
+    }
+}
