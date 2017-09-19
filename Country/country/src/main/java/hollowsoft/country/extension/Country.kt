@@ -23,10 +23,10 @@ import java.util.*
 /**
  * @author Igor Morais
  */
-val Country.image : Int?
-    get() = R.drawable::class.java.getField(id.toLowerCase()).getInt(null)
+val Country.image : Int
+    get() = try { R.drawable::class.java.getField(id.toLowerCase()).getInt(null) } catch (e: NoSuchFieldException) { R.drawable.none }
 
-fun Country.all(locale: Locale = Locale.getDefault()) : List<Country> {
+fun Country.Companion.all(locale: Locale = Locale.getDefault()) : List<Country> {
 
     val array = ArrayList<Country>(Locale.getISOCountries().size)
 

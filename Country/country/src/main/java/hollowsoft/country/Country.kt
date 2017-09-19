@@ -16,7 +16,14 @@
 
 package hollowsoft.country
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
 /**
  * @author Igor Morais
  */
-data class Country(val id: String, val name: String)
+@Parcelize
+class Country(val id: String, val name: String) : Parcelable {
+
+    companion object
+}
