@@ -22,6 +22,11 @@ allprojects {
 
         maven {
 
+            url  "http://dl.bintray.com/moraisigor/Maven"
+        }
+
+        maven {
+
             url 'https://maven.google.com'
         }
     }

@@ -35,6 +35,8 @@ dependencies {
     // Widget
     compile 'com.android.support:recyclerview-v7:26.0.2'
 
+    compile 'com.github.moraisigor:country:0.2.5'
+
     testCompile 'junit:junit:4.12'
 
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {

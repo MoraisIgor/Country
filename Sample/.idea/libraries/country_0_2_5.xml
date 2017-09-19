@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="country-0.2.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/fd4e208ee91e242d92424c552b5a042649eff53e/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/fd4e208ee91e242d92424c552b5a042649eff53e/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.moraisigor/country/0.2.5/35416bc8fc34f7d155a5c7c5ec2d70e2a7cf6d0a/country-0.2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
