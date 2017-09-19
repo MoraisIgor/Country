@@ -1,9 +1,10 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'org.jetbrains.kotlin.android.extensions'
 apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
 
-version '0.1.0'
+version '1.0.0'
 
 android {
 
@@ -12,10 +13,15 @@ android {
 
     defaultConfig {
 
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
         versionName version
+    }
+
+    androidExtensions {
+
+        experimental = true
     }
 
     buildTypes {
@@ -51,7 +57,7 @@ install {
                 packaging 'aar'
 
                 name 'Country'
-                description 'Country'
+                description ''
                 url 'https://github.com/MoraisIgor/Country'
 
                 licenses {
@@ -85,6 +91,8 @@ install {
 }
 
 task javadoc(type: Javadoc) {
+
+    excludes = ['**/*.kt']
 
     source = android.sourceSets.main.java.srcDirs
 
@@ -129,7 +137,7 @@ bintray {
         repo = 'Maven'
 
         name = 'Country'
-        desc = 'Country'
+        desc = ''
         websiteUrl = 'https://github.com/MoraisIgor/Country'
         issueTrackerUrl = 'https://github.com/MoraisIgor/Country/issues'
         vcsUrl = 'https://github.com/MoraisIgor/Country.git'
