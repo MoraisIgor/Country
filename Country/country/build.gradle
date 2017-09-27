@@ -55,7 +55,7 @@ install {
                 packaging 'aar'
 
                 name 'Country'
-                description ''
+                description 'Country gives a list of countries with all their flags.'
                 url 'https://github.com/MoraisIgor/Country'
 
                 licenses {
@@ -135,7 +135,7 @@ bintray {
         repo = 'Maven'
 
         name = 'Country'
-        desc = ''
+        desc = 'Country gives a list of countries with all their flags.'
         websiteUrl = 'https://github.com/MoraisIgor/Country'
         issueTrackerUrl = 'https://github.com/MoraisIgor/Country/issues'
         vcsUrl = 'https://github.com/MoraisIgor/Country.git'
