@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_marginEnd="20dp"
+        android:ellipsize="end"
         android:lines="1"
         android:textColor="@android:color/black"
         android:textSize="16sp" />
