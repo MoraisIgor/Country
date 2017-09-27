@@ -2,7 +2,7 @@
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SlidingDrawer-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/765)
 
-Country is a..
+Country gives a list of countries with all their flags.
 
 
 ## Setup
@@ -12,12 +12,26 @@ Add this to your dependencies:
 ```
 dependencies {
     
-    compile 'com.github.moraisigor:country:0.2.5'
+    compile 'com.github.moraisigor:country:1.0.0'
 }
 ```
 
 
 ## Example
+
+Just call `all` function:
+
+```kotlin
+Country.all()
+```
+
+Or you can pass a `locale` as argument:
+
+```kotlin
+Country.all(Locale.ENGLISH)
+```
+
+Check the sample for more details.
 
 
 ## Contact
@@ -43,4 +57,4 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-[1]: https://raw.githubusercontent.com/MoraisIgor/SlidingDrawer/master/Asset/Icon.png
+[1]: https://raw.githubusercontent.com/MoraisIgor/Country/master/Asset/Icon.png
