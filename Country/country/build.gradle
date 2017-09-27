@@ -24,6 +24,11 @@ android {
         experimental = true
     }
 
+    sourceSets {
+
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
     buildTypes {
 
         release {
@@ -31,11 +36,6 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-    }
-
-    sourceSets {
-
-        main.java.srcDirs += 'src/main/kotlin'
     }
 }
 
