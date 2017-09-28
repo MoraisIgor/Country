@@ -4,6 +4,8 @@
 
 Country gives a list of countries with all their flags.
 
+![2]
+
 
 ## Setup
 
@@ -58,3 +60,4 @@ limitations under the License.
 ```
 
 [1]: https://raw.githubusercontent.com/MoraisIgor/Country/master/Asset/Icon.png
+[2]: https://raw.githubusercontent.com/MoraisIgor/Country/master/Asset/Preview.png
