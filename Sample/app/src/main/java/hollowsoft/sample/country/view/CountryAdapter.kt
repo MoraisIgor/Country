@@ -53,10 +53,7 @@ class CountryAdapter(private val listener: ItemListener<Country>, private val li
 
             name.text = country.name
 
-            country.image.let {
-
-                image.setImageResource(it)
-            }
+            image.setImageResource(country.image)
 
             view.setOnClickListener {
 
