@@ -9,7 +9,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 group = 'com.github.moraisigor'
-version = '1.0.1'
+version = '1.0.2'
 
 android {
 
