@@ -14,7 +14,7 @@ Add this to your dependencies:
 ```
 dependencies {
     
-    compile 'com.github.moraisigor:country:1.0.1'
+    compile 'com.github.moraisigor:country:1.0.2'
 }
 ```
 
