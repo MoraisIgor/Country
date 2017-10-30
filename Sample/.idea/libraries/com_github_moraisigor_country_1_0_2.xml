@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.moraisigor:country-1.0.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/country-1.0.2.aar/c84cc8bea8fd77861def244c18947577/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/country-1.0.2.aar/c84cc8bea8fd77861def244c18947577/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.moraisigor/country/1.0.2/d868e5db551f85c528eb4a7747fa6857ee462d71/country-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
