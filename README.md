@@ -13,8 +13,8 @@ Add this to your dependencies:
 
 ```
 dependencies {
-    
-    compile 'com.github.moraisigor:country:1.0.2'
+
+    implementation 'com.github.moraisigor:country:1.0.2'
 }
 ```
 
