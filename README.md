@@ -7,6 +7,9 @@ Country gives a list of countries with all their flags.
 ![2]
 
 
+The high resolution images are in the [Image](https://github.com/MoraisIgor/Country/tree/master/Image) folder.
+
+
 ## Setup
 
 Add this to your dependencies:
