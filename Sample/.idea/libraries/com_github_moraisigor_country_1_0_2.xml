@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.github.moraisigor:country-1.0.2">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/country-1.0.2.aar/66bf0439a08f1b928c1cf7f2a8dbaab6/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/country-1.0.2.aar/66bf0439a08f1b928c1cf7f2a8dbaab6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/country-1.0.2.aar/bba962ce13829be91c9747efd2f454f7/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/country-1.0.2.aar/bba962ce13829be91c9747efd2f454f7/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
