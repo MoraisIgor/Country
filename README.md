@@ -22,13 +22,13 @@ dependencies {
 
 ## Example
 
-Just call `all` function:
+Just call `all` function.
 
 ```kotlin
 Country.all()
 ```
 
-Or you can pass a `locale` as argument:
+Or you can pass a `locale` as argument.
 
 ```kotlin
 Country.all(Locale.ENGLISH)
