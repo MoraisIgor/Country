@@ -12,8 +12,6 @@ The high resolution images are in the [Image](https://github.com/MoraisIgor/Coun
 
 ## Setup
 
-Add this to your dependencies:
-
 ```
 dependencies {
 
