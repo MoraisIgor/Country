@@ -4,7 +4,7 @@ apply plugin: 'kotlin-android'
 android {
 
     compileSdkVersion 27
-    buildToolsVersion '27.0.1'
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
 
@@ -28,10 +28,8 @@ android {
 dependencies {
 
     // Support
-    implementation 'com.android.support:appcompat-v7:27.0.2'
-
-    // Widget
-    implementation 'com.android.support:recyclerview-v7:27.0.2'
+    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportVersion}"
+    implementation "com.android.support:recyclerview-v7:${rootProject.ext.supportVersion}"
 
     // Helper
     implementation 'com.github.moraisigor:country:1.0.2'
