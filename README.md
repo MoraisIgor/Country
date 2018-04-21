@@ -15,7 +15,7 @@ The high resolution images are in the [Image](https://github.com/MoraisIgor/Coun
 ```
 dependencies {
 
-    implementation 'com.github.moraisigor:country:1.0.2'
+    implementation 'com.github.moraisigor:country:1.0.3'
 }
 ```
 
