@@ -9,7 +9,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 group = 'com.github.moraisigor'
-version = '1.0.2'
+version = '1.0.3'
 
 android {
 
@@ -143,5 +143,14 @@ bintray {
         issueTrackerUrl = 'https://github.com/MoraisIgor/Country/issues'
 
         vcsUrl = 'https://github.com/MoraisIgor/Country.git'
+
+        version {
+
+            gpg {
+
+                sign = true
+                passphrase = p.getProperty('bintray.password')
+            }
+        }
     }
 }
